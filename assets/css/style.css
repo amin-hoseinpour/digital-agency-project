@@ -1,0 +1,141 @@
+@import url('font.css');
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:var(--title-color) !important;
+}
+:root{
+    --body-color:#FDFCFC;
+    --title-color:#272D38;
+    --back-color:#F6F6F6;
+    --btn-color:#8EADD5;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: interfont;
+    font-size: 1.6rem;
+    background-color:var(--body-color) ;
+   
+}
+
+a{
+    text-decoration: none;
+}
+ul , li , ol{
+    list-style: none;
+}
+
+header .navbar-nav .nav-item:not(:last-child) {
+    margin-right: 38px;
+}
+header,.first-content {
+    overflow: hidden;
+}
+header::before{
+    content:'';
+    background: #8EADD5;
+    background: radial-gradient(circle, rgba(142, 173, 213, 1) 0%, rgba(255, 255, 255, 0) 60%);
+    filter: opacity(0.5);
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    display: inline-block;
+    top: -60%;
+    left: -30%;
+    z-index: -1;
+    border-radius: 100%;
+}
+
+.hero-header button {
+    background-color: var(--btn-color);
+
+}
+.hero-header button:hover {
+    background-color: var(--btn-color);
+
+}
+.hero-header h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.logo-company .wrapper ,.mysupport{
+    background-color:var(--back-color);
+}
+
+.first-content,.logo-company , .myteam , .mysupport{
+    padding-top: 100px;
+}
+.first-content .left-side{
+    flex:58%;
+}
+.first-content .right-side{
+    flex:42%;
+}
+
+.first-content h2{
+    font-size: 60px;
+    font-weight: 700;
+}
+.first-content p{
+    font-size: 23px;
+}
+
+.first-content-wrapper::before{
+    content:'';
+    background: #8EADD5;
+    background: radial-gradient(circle, rgba(142, 173, 213, 1) 0%, rgba(255, 255, 255, 0) 60%);
+    filter: opacity(0.5);
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    display: inline-block;
+    top: -60%;
+    right: -30%;
+    z-index: -1;
+    border-radius: 100%;
+}
+
+
+
+
+/* responsive codes comes here */
+@media screen and (max-width:776px){
+    header::before{ 
+        width: 800px;
+        height: 800px;
+        top: -60%;
+        left: -60%;
+    }
+    .first-content h2{
+        font-size: 50px;
+        font-weight: 700px;
+        text-align: center;
+    }
+
+    .first-content-wrapper::before{ 
+        width: 800px;
+        height: 800px;
+        top: -60%;
+        right: -60%;
+    }
+   
+}
+@media screen and (min-width:1400px) and (max-width:2500px){
+        header::before{ 
+            width: 900px;
+            height: 900px;
+            top: -20%;
+            left: -20%;
+        }
+
+        .first-content-wrapper::before{ 
+            width: 800px;
+            height: 800px;
+            top: -20%;
+            right: -20%;
+        }
+
+}
